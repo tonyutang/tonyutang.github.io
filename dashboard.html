@@ -16,12 +16,13 @@
   <script>
     requirejs.config({
       paths: {
-          'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.8.2/umd/react.production.min',
-          'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.2/umd/react-dom.production.min'
+        'totally': 'js/totally',
+        'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.8.2/umd/react.production.min',
+        'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.2/umd/react-dom.production.min'
       }
     });
 
-    requirejs(['react', 'react-dom'], function(React, ReactDOM) {
+    requirejs(['react', 'react-dom', 'totally'], function(React, ReactDOM) {
       console.log('abc');
     });
   </script>
