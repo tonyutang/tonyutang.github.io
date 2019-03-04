@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html>
 <head profile="http://www.w3.org/2005/10/profile">
   <meta charset="UTF-8"/>
-  <title>完美藝術品</title>
-  <link rel="icon" href="image/td.ico" type="image/png" >
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+  <title>藝術品</title>
+  <link rel="icon" href="image/td.ico" type="image/png" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.0/react-redux.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
 </head>
 <body>
   <link rel="stylesheet" type="text/css" href="css/base.css" />
   <link rel="stylesheet" type="text/css" href="css/site.css" />
   <div id="app"></div>
-  <!-- <script src="js/totally.js"></script> -->
-  <script>
-    requirejs.config({
-      paths: {
-        'totally': './js/totally'
-        // 'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min',
-        // 'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min'
-      }
-    });
-
-    requirejs(['totally'], function(totally) {
-      totally.run();
-    });
-  </script>
+  <script src="js/totally.js"></script>
 </body>
 </html>
