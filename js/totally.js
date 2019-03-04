@@ -174,7 +174,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         a: "a",
         b: "b"
     };
-    ReactDOM.render(React.createElement(settings_1.Settings, { settings: settings }), document.getElementById("app"));
+    function run() {
+        ReactDOM.render(React.createElement(settings_1.Settings, { settings: settings }), document.getElementById("app"));
+    }
+    exports.run = run;
 }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
