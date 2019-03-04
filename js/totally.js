@@ -185,24 +185,24 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /***/ }),
 
 /***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
+/*!********************************!*\
+  !*** external {"amd":"react"} ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = React;
+module.exports = undefined;
 
 /***/ }),
 
 /***/ "react-dom":
-/*!***************************!*\
-  !*** external "ReactDOM" ***!
-  \***************************/
+/*!************************************!*\
+  !*** external {"amd":"react-dom"} ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ReactDOM;
+module.exports = undefined;
 
 /***/ })
 

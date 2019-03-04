@@ -5,18 +5,20 @@
   <title>完美藝術品</title>
   <link rel="icon" href="image/td.ico" type="image/png" >
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.2/umd/react-dom.production.min.js"></script> -->
 </head>
 <body>
   <link rel="stylesheet" type="text/css" href="css/base.css" />
   <link rel="stylesheet" type="text/css" href="css/site.css" />
   <div id="app"></div>
-  <script src="js/totally.js"></script>
+  <!-- <script src="js/totally.js"></script> -->
   <script>
     requirejs.config({
       paths: {
-        'totally': './js/totally'
+        'totally': './js/totally',
+        'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.production.min',
+        'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min'
       }
     });
 
