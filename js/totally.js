@@ -98,24 +98,24 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     Object.defineProperty(exports, "__esModule", { value: true });
     class Enumerable {
         constructor(items) {
-            this._items = items;
+            this.items = items;
         }
         static from(items) {
             return new Enumerable(items);
         }
         toArray() {
-            return this._items;
+            return this.items;
         }
         foreach(callback) {
-            for (let i = 0; i < this._items.length; i++) {
-                callback(this._items[i]);
+            for (const item of this.items) {
+                callback(item);
             }
             return this;
         }
         map(callback) {
             const items = [];
-            for (let i = 0; i < this._items.length; i++) {
-                items.push(callback(this._items[i]));
+            for (const item of this.items) {
+                items.push(callback(item));
             }
             return new Enumerable(items);
         }
@@ -141,7 +141,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         render() {
             const settings = enumerable_1.default
                 .from(Object.keys(this.props.settings))
-                .map(key => {
+                .map((key) => {
                 return (React.createElement("tr", { key: key },
                     React.createElement("td", null, key),
                     React.createElement("td", null,
